@@ -1,4 +1,4 @@
-<img  alt="portfolio" width="100%" src="https://miro.medium.com/v2/resize:fit:1400/0*s7-847-cMWNrfnyH.gif">
+<img  alt="portfolio" width="100%" src="https://static.wixstatic.com/media/b83005_809e60f5dae943ddb60598d5d8343100~mv2.gif">
 <h1 align="center">Hi 👋, I'm Shaikh Mazheruddin Fahad</h1>
 
 
