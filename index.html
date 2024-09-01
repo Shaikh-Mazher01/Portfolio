@@ -1,13 +1,390 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Portfolio</title>
-  <link rel="shortcut icon" type="image/jpeg" href="ic.jpeg">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="keywords" content="jigar sable, portfolio, jigar, full stack dev, personal portfolio lifecodes, portfolio design, portfolio website, personal portfolio" />
+    <meta name="description" content="Welcome to Jigar's Portfolio. Full-Stack Web Developer and Android App Developer" /> -->
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Favicon -->
+    <link id='favicon' rel="shortcut icon" href="./assets/images/hero1.png" type="image/x-png">
+    <title>Portfolio | Shaikh Mazheruddin</title>
 </head>
-<body>
+<body oncontextmenu="return false">
 
-<h1 align="center">Hi! I'm Shaikh Mazheruddin Fahad</h1>
+<!-- pre loader -->
+<!-- <div class="loader-container">
+  <img draggable="false" src="./assets/images/preloader.gif" alt="">
+</div> -->
+
+<!-- navbar starts -->
+<header>
+        <a href="#home" class="logo"> Portfolio</a>
+        
+        <div id="menu" ></div>
+        <nav class="navbar">
+            <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#achivements">Achivements</a></li>
+            <li><a href="#projects">Projects</a></li>
+            
+            </ul>
+        </nav>
+</header>
+<!-- navbar ends -->
+
+
+<!-- home section starts -->
+<section class="home" id="home">
+  <div class="content">
+      <h2>Hi, I'm <br/><span>Shaikh Mazheruddin Fahad</span></h2>
+      <p>Passionate in <span class="typing-text"></span></p>
+      <a href="#about" class="btn"><span>About Me</span>
+          <i class="fas fa-arrow-circle-down"></i>
+      </a>
+  </div>
+  <div class="image">
+      <img draggable="false" class="tilt" src="./assets/images/hero1.png" alt="">
+  </div>
+</section>
+<!-- home section ends -->
+
+
+<!-- about section starts -->
+<section class="about" id="about">
+    <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
+    
+    <div class="row">
+
+    <div class="image">
+        
+        <img draggable="false" class="tilt" src="./assets/images/profile2.png" alt="">
+    </div>
+    <div class="content">
+        <h3>I'm <span style="color: #2aa5f7;">Fahad</span></h3>
+       
+        
+        <p>I hold a BTech in Computer Science and Engineering from MGM's College of
+          Engineering, Nanded, graduated in 2023, and have recently completed a Full Stack Data
+          Science course from AlmaBetter in 2024. I am enthusiastic about applying my
+          development skills and knowledge in data analysis or data science. My focus on
+          collaboration. communication. passion. and creativity drives me to contribute
+          effectively to the team and the organization. I am eager to be part of a dynamic
+          industry, where I can grow professionally. embrace new leaming opportunities. and
+          make significant contributions to the organization's success. I look forward to
+          joining a forward-thinking company that values both professional development and
+          impactful work. </p>
+        
+        <div class="box-container">
+
+            <div class="box">
+              <p><span> email : <a href="mailto:sfahad7020@gmail.com">sfahad7020@gmail.com</a></span> </p>
+              <p><span> phone : </span> +91 7620687838</p>
+              <p><span> place : </span> Nanded, India - 431602</p>
+            </div>
+        </div>
+        
+        <div class="resumebtn">
+            <a href="https://drive.google.com/file/d/1EWwkoOWLWYJ0mAdyEPOS-GtO89CQkL4T/view?usp=drive_link" target="_blank" class="btn"><span>Resume</span>
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </div>
+
+    </div>
+    </div>
+</section>
+<!-- about section ends -->
+<section class="skills" id="skills">
+  <h1 class="main-heading"><i class="fas fa-file-alt"></i> My<span>Skills</span></h1>
+
+  <!-- Technical Skills -->
+  <div class="skills-section">
+      <h2 class="sub-heading">Technical Skills</h2>
+      <div class="skills-box">
+          <div class="skills-container">
+              <div class="skill-card">
+                  <img src="assets/images/skills/python.jpeg" alt="Python">
+                  <span>Python</span>
+              </div>
+              <div class="skill-card">
+                  <img src="assets/images/skills/Mysql.png" alt="MySQL">
+                  <span>MySQL</span>
+              </div>
+              <div class="skill-card">
+                  <img src="assets/images/skills/data_analysis.png" alt="Data Analysis">
+                  <span>Data Analysis</span>
+              </div>
+              <div class="skill-card">
+                  <img src="assets/images/skills/powerbi.jpeg" alt="Power BI">
+                  <span>Power BI</span>
+              </div>
+              <div class="skill-card">
+                <img src="assets/images/skills/tableau.png" alt="Tableau">
+                <span>Tableau</span>
+              </div>
+              <div class="skill-card">
+                <img src="assets/images/skills/postgres.png" alt="PostgresSQL">
+                <span>Postgres</span>
+              </div>
+              <div class="skill-card">
+                <img src="assets/images/skills/ml.png" alt="Machine Learning">
+                <span>Machine Learning</span>
+              </div>
+              <div class="skill-card">
+                <img src="assets/images/skills/excel.png" alt="Excel">
+                <span>Excel</span>
+              </div>
+              <div class="skill-card">
+                <img src="assets/images/skills/react.png" alt="ReactJS">
+                <span>ReactJS</span>
+              </div>
+              <div class="skill-card">
+                <img src="assets/images/skills/node.png" alt="NodeJS">
+                <span>NodeJS</span>
+              </div>
+              <div class="skill-card">
+                <img src="assets/images/skills/mongo.png" alt="MongoDB">
+                <span>MongoDB</span>
+              </div>
+              <div class="skill-card">
+                <img src="assets/images/skills/django.png" alt="django">
+                <span>django</span>
+              </div>
+              <div class="skill-card">
+                <img src="assets/images/skills/html.png" alt="HTML">
+                <span>HTML</span>
+             </div><div class="skill-card">
+               <img src="assets/images/skills/css.png" alt="CSS">
+                <span>CSS</span>
+             </div>
+             <div class="skill-card">
+               <img src="assets/images/skills/js.png" alt="Js">
+               <span>Js</span>
+             </div>
+              <div class="skill-card">
+                <img src="assets/images/skills/php.png" alt="PHP">
+                <span>PHP</span>
+              </div>
+              <!-- Add more technical skills as needed -->
+          </div>
+      </div>
+  </div>
+
+  <!-- Professional Skills -->
+  <div class="skills-section">
+      <h2 class="sub-heading">Professional Skills</h2>
+      <div class="skills-box">
+          <div class="skills-container">
+              <div class="skill-card1">
+                  <span>Problem Solving</span>
+              </div>
+              <div class="skill-card1">
+                  <span>Fexibility</span>
+              </div>
+              <div class="skill-card1">
+                  <span>Creativity</span>
+              </div>
+              <div class="skill-card1">
+                  <span>Teamwork</span>
+              </div>
+              <div class="skill-card1">
+                <span>Confidence</span>
+            </div>
+            <div class="skill-card1">
+              <span>Leadership</span>
+            </div>
+            <div class="skill-card1">
+              <span>Communication</span>
+            </div>
+            <div class="skill-card1">
+              <span>Time Management</span>
+            </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- Education section starts -->
+<section class="education" id="education">
+
+  <h1 class="heading"><i class="fas fa-user-graduate"></i> My <span>Education</span></h1>
+    <div class="box-container">
+    <div class="box">
+        <div class="image">
+        <img draggable="false" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0_EH01ZgIVVHOcwiid3ej8-ebxyWzXHiDGw&s" alt="">
+        </div>
+        <div class="content">
+        <h3>BTech in Computer Science and Engineering</h3>
+        <p>MGM College Of Enginnering Nanded | DBATU</p>
+        <p>7.81 CGPA</p>
+        <h4>2019-2023 | Completed</h4>
+        </div>
+    </div>
+
+    <div class="box">
+      <div class="image">
+      <img draggable="false" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUORnc89ea9dIh-pQ6ySZMA-PCdDHH9NeWzg&s" alt="">
+      </div>
+      <div class="content">
+      <h3>HSC Science</h3>
+      <p>AL-Rizwan Jr. College and Group of Schools | State board</p>
+      <p>62.62 %</p>
+      <h4>2018-2019 | Completed</h4>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="image">
+      <img draggable="false" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUORnc89ea9dIh-pQ6ySZMA-PCdDHH9NeWzg&s" alt="">
+      </div>
+      <div class="content">
+      <h3>SSC</h3>
+      <p>AL-Rizwan English School | State board</p>
+      <p>78.40 %</p>
+      <h4>2016-2017 | Completed</h4>
+      </div>
+    </div>
+
+</div>
+</section>
+<!-- Education section ends -->
+
+
+<!-- Achivements section start -->
+<section class="Achivements" id="achivements">
+
+  <h1 class="heading"><i class="fas fa-user-graduate"></i> My <span>Achivements</span></h1>
+  <div class="certification-grid">
+    <div class="certification-card">
+        <div class="image-container">
+            <img src="assets/images/certificate/Almabetter.png" alt="Introduction to Computer Programming">
+            <div class="overlay"><a href="https://certificates.almabetter.com/en/verify/08227611949392">Certificate</a></div>
+        </div>
+        <h2>Introduction to Computer Programming</h2>
+
+    </div>
+    <div class="certification-card">
+        <div class="image-container">
+            <img src="assets/images/certificate/Almabetter.png" alt="Numerical Programming in Python">
+            <div class="overlay"><a href="https://certificates.almabetter.com/en/verify/32765254200130">Certificate</a></div>
+        </div>
+        <h2>Numerical Programming in Python</h2>
+    </div>
+    <div class="certification-card">
+        <div class="image-container">
+            <img src="assets/images/certificate/Almabetter.png" alt="Relational Databases">
+            <div class="overlay"><a href="https://certificates.almabetter.com/en/verify/86998462967852">Certificate</a></div>
+        </div>
+        <h2>Relational Databases</h2>
+    </div>
+    <div class="certification-card">
+        <div class="image-container">
+            <img src="assets/images/certificate/Almabetter.png" alt="Data Visualization Tools">
+            <div class="overlay"><a href="https://certificates.almabetter.com/en/verify/67352535062095">Certificate</a></div>
+        </div>
+        <h2>Data Visualization Tools</h2>
+    </div>
+    <div class="certification-card">
+        <div class="image-container">
+            <img src="assets/images/certificate/Almabetter.png" alt="Applied Statistics">
+            <div class="overlay"><a href="https://certificates.almabetter.com/en/verify/09216945893903">Certificate</a></div>
+        </div>
+        <h2>Applied Statistics</h2>
+    </div>
+    <div class="certification-card">
+        <div class="image-container">
+            <img src="assets/images/certificate/Almabetter.png" alt="Introduction to Machine Learning">
+            <div class="overlay"><a href="https://certificates.almabetter.com/en/verify/19399456649333">Certificate</a></div>
+        </div>
+        <h2>Introduction to Machine Learning |</h2>
+    </div>
+    <div class="more-certificates">
+      <a href="assets/certificates.html">More Certificates</a>
+    </div>
+  </div>
+</section>
+<!-- Acchivement section ens -->
+
+<!-- project section starts -->
+<section class="projects-section" id="projects">
+  <h1 class="heading"><i class="fas fa-briefcase"></i>  My <span>Projects</span></h1>
+  <div class="container">
+    <div class="image-wrapper">
+      <img src="assets/images/projects/banner.png" alt="Project Image">
+      <div class="text-container">
+        <p class="project-text">Here you can find a selection of my most recent work, 
+          showcasing my skills and experience in various aspects of software development, 
+          data analysis, and machine learning. Each project highlights my problem-solving
+           abilities and dedication to producing high-quality results.</p>
+        <button class="t-button" onclick="window.location.href='assets/projects.html';">My Work</button>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- project section ends -->
+
+<!-- footer section starts -->
+<section class="footer">
+
+  <div class="box-container">
+
+      <div class="box">
+          <h3>Fahad's Portfolio</h3>
+          <p>
+            Thank you for taking the time to explore my personal portfolio. I would be delighted to connect with you.
+            I am particularly enthusiastic about opportunities to contribute to the growth and development of emerging
+            economies, where I can apply my skills and passion to make a meaningful impact. Let's connect and explore
+            how we can work together towards a brighter future. </p>
+      </div>
+
+
+
+      <div class="box">
+          <h3>contact info</h3>
+          <p> <i class="fas fa-phone"></i><a href="tel:+917620687838">+91 762-068-7838</a></p>
+          <p> <i class="fas fa-envelope"></i><a href="mailto:sfahad7020@gmail.com">sfahad7020@gmail.com</a></p>
+          <p> <i class="fas fa-map-marked-alt"></i>Nanded, India-431602</p>
+          <div class="share">
+
+              <a href="https://www.linkedin.com/in/shaikh-mazheruddin-fahad-33183a244/" class="fab fa-linkedin" aria-label="LinkedIn" target="_blank"></a>
+              <a href="https://github.com/shaikh-mazher01" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
+
+          </div>
+      </div>
+  </div>
+
+  <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a href="https://www.linkedin.com/in/shaikh-mazheruddin-fahad-33183a244"> Shaikh Mazheruddin Fahad</a></h1>
+
+</section>
+<!-- footer section ends -->
+
+
+<!-- scroll top btn -->
+<a href="#home" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
+<!-- scroll back to top -->
+
+
+<!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
+<!-- jquery cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- typed.js cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<!-- vanilla tilt.js links -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
+
+<script src="./assets/js/script.js"></script>
 
 </body>
 </html>
-
