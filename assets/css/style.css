@@ -52,8 +52,8 @@ header {
   }
 
 section {
-    min-height: 100vh;
-    padding: 2rem 9%;
+    min-height: auto;
+    padding: 6rem 5% 4rem 5%;
   }
 
 header .logo {
@@ -91,7 +91,7 @@ header .navbar ul li a:hover {
 /* Navbar */
 
 /* Mobile view styles */
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
     header {
         padding: 1.5rem 5%;
         height: 5.5rem;
@@ -132,9 +132,29 @@ header .navbar ul li a:hover {
         padding: 0.7rem;
         width: 100%;
     }
+} */
+
+@media (min-width: 769px) {
+    .home {
+        flex-direction: row; 
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    header .navbar {
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: #7c7575;
+        display: none; /* Hide by default until clicked */
+    }
+    /* This class will be toggled by your jQuery script */
+    header .navbar.nav-toggle {
+        display: block; 
+    }
 }
 /*Home*/
-.home {
+/* .home {
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -142,6 +162,13 @@ header .navbar ul li a:hover {
   min-height: 100vh;
   align-items: center;
   background-color: #000000;
+} */
+.home {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
 }
 
 .home .content {
