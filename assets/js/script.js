@@ -3,7 +3,7 @@ VanillaTilt.init(document.querySelectorAll(".tilt"), {
 });
 
 var typed = new Typed(".typing-text", {
-    strings: ["Programming" , "Data Analyst" , "Python programmer", "BI Developer" ],
+    strings: ["Programming" , "Data Analyst" , "Python programmer", "BI Developer", "Data Engineer"],
     typeSpeed:50,
     backSpeed:40,
     backDelay:500,
