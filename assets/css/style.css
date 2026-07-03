@@ -525,7 +525,59 @@ header .navbar ul li a:hover {
   border-radius: 5px;
   cursor: pointer;
 }
+.project-table {
+  width: 100%;
+  max-width: 700px;
+  margin: 30px auto;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #333;
+  background: #14141f;
+}
 
+.project-table th {
+  background: #1a1a2e;
+  color: #00d4ff;
+  text-align: left;
+  padding: 14px 20px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-bottom: 1px solid #333;
+}
+
+.project-table th:last-child,
+.project-table td:last-child {
+  text-align: center;
+  width: 80px;
+}
+
+.project-table td {
+  padding: 14px 20px;
+  color: #e0e0e0;
+  border-bottom: 1px solid #2a2a3a;
+  font-size: 0.9rem;
+}
+
+.project-table tr:last-child td {
+  border-bottom: none;
+}
+
+.project-table tr:hover td {
+  background: #1e1e30;
+}
+
+.project-table a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: transform 0.2s ease;
+  display: inline-block;
+}
+
+.project-table a:hover {
+  transform: scale(1.2);
+}
 /* --- Footer Section --- */
 .footer {
   min-height: auto;
