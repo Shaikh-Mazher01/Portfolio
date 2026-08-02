@@ -1,60 +1,114 @@
-VanillaTilt.init(document.querySelectorAll(".tilt"), {
-    max: 10,
-});
+document.addEventListener("DOMContentLoaded", () => {
+    
+    // 1. Mobile Navbar Toggle
+    const menuBtn = document.querySelector("#menu-btn");
+    const navbar = document.querySelector(".navbar");
 
-var typed = new Typed(".typing-text", {
-    strings: ["Programming" , "Data Analyst" , "Python programmer", "BI Developer", "Data Engineer"],
-    typeSpeed:50,
-    backSpeed:40,
-    backDelay:500,
-    loop:true
-});
+    if (menuBtn && navbar) {
+        menuBtn.addEventListener("click", () => {
+            menuBtn.classList.toggle("fa-times");
+            navbar.classList.toggle("active");
+        });
+    }
 
-$(document).ready(function () {
+    // 2. Window Scroll Navigation & Top Scroll Button Toggle
+    const scrollTop = document.querySelector("#scroll-top");
 
-    $('#menu').click(function () {
-        $(this).toggleClass('fa-times');
-        $('.navbar').toggleClass('nav-toggle');
-    });
-
-    $(window).on('scroll load', function () {
-        $('#menu').removeClass('fa-times');
-        $('.navbar').removeClass('nav-toggle');
-
-        if (window.scrollY > 60) {
-            document.querySelector('#scroll-top').classList.add('active');
-        } else {
-            document.querySelector('#scroll-top').classList.remove('active');
+    window.addEventListener("scroll", () => {
+        if (menuBtn && navbar) {
+            menuBtn.classList.remove("fa-times");
+            navbar.classList.remove("active");
         }
 
-        // scroll spy
-        $('section').each(function () {
-            let height = $(this).height();
-            let offset = $(this).offset().top - 200;
-            let top = $(window).scrollTop();
-            let id = $(this).attr('id');
+        if (scrollTop) {
+            if (window.scrollY > 60) {
+                scrollTop.classList.add("active");
+            } else {
+                scrollTop.classList.remove("active");
+            }
+        }
 
-            if (top > offset && top < offset + height) {
-                $('.navbar ul li a').removeClass('active');
-                $('.navbar').find(`[href="#${id}"]`).addClass('active');
+        // Active Navbar Scroll Spy
+        const sections = document.querySelectorAll("section");
+        const navLinks = document.querySelectorAll(".navbar a");
+
+        sections.forEach((sec) => {
+            const top = window.scrollY;
+            const offset = sec.offsetTop - 200;
+            const height = sec.offsetHeight;
+            const id = sec.getAttribute("id");
+
+            if (top >= offset && top < offset + height) {
+                navLinks.forEach((link) => {
+                    link.classList.remove("active");
+                    const targetLink = document.querySelector(`.navbar a[href*='${id}']`);
+                    if (targetLink) targetLink.classList.add("active");
+                });
             }
         });
     });
-});
-const menuIcon = document.querySelector('#menu');
-const navbar = document.querySelector('.navbar');
 
-// 2. Add a click event listener to the hamburger icon
-menuIcon.addEventListener('click', () => {
-    // This toggles the 'active' class. If it's there, remove it. If not, add it.
-    navbar.classList.toggle('active');
-});
+    // 3. Technical Skills Filter Routine
+    const skillFilters = document.querySelectorAll(".skills-filter .filter-btn");
+    const skillCards = document.querySelectorAll(".skills-grid .skill-card");
 
-// 3. Optional: Close the menu when a link inside it is clicked
-const navLinks = document.querySelectorAll('.navbar ul li a');
+    skillFilters.forEach((btn) => {
+        btn.addEventListener("click", () => {
+            skillFilters.forEach((f) => f.classList.remove("active"));
+            btn.classList.add("active");
 
-navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        navbar.classList.remove('active');
+            const filter = btn.getAttribute("data-filter");
+
+            skillCards.forEach((card) => {
+                if (filter === "all" || card.getAttribute("data-category") === filter) {
+                    card.classList.remove("hide");
+                } else {
+                    card.classList.add("hide");
+                }
+            });
+        });
     });
+
+    // 4. Projects Category Filter Routine
+    const projectFilters = document.querySelectorAll(".project-filter .p-filter-btn");
+    const projectCards = document.querySelectorAll(".projects-grid .project-card");
+
+    projectFilters.forEach((btn) => {
+        btn.addEventListener("click", () => {
+            projectFilters.forEach((f) => f.classList.remove("active"));
+            btn.classList.add("active");
+
+            const filter = btn.getAttribute("data-filter");
+
+            projectCards.forEach((card) => {
+                if (filter === "all" || card.getAttribute("data-category") === filter) {
+                    card.classList.remove("hide");
+                } else {
+                    card.classList.add("hide");
+                }
+            });
+        });
+    });
+
+    // 5. VanillaTilt Initialization
+    if (typeof VanillaTilt !== "undefined") {
+        VanillaTilt.init(document.querySelectorAll(".tilt"), {
+            max: 15,
+            speed: 400,
+            glare: true,
+            "max-glare": 0.2
+        });
+    }
+
+    // 6. Typed.js Initialization
+    const typingElement = document.querySelector(".typing-text");
+    if (typingElement && typeof Typed !== "undefined") {
+        new Typed(".typing-text", {
+            strings: ["Data Analytics", "SQL Database Engineering", "Power BI Dashboards", "Python Automation"],
+            loop: true,
+            typeSpeed: 50,
+            backSpeed: 25,
+            backDelay: 1000
+        });
+    }
 });
