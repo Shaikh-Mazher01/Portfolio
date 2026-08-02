@@ -7,238 +7,843 @@
     <title>Portfolio | Shaikh Mazheruddin</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <<link id="favicon" rel="shortcut icon" href="./assets/images/hero1.png" type="image/png">
+    <link id="favicon" rel="shortcut icon" href="./assets/images/hero.png" type="image/png">
 </head>
-<body>
+<body oncontextmenu="return false;">
 
-<header>
-    <a href="#home" class="logo">Portfolio</a>
-    <div id="menu" class="fas fa-bars"></div>
+<header class="header">
+    <a href="#" class="logo">
+    <svg class="logo-badge" viewBox="0 0 100 100" width="36" height="36">
+        <defs>
+            <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#1de3f9" />
+                <stop offset="100%" stop-color="#203ed1" />
+            </linearGradient>
+        </defs>
+        <rect x="5" y="5" width="90" height="90" rx="22" fill="#0d0d0d" stroke="url(#logoGrad)" stroke-width="4"/>
+        <text x="50%" y="60%" text-anchor="middle" dominant-baseline="middle" fill="url(#logoGrad)" font-family="'Cinzel', 'Poppins', serif" font-weight="800" font-size="34" letter-spacing="-1">SMF</text>
+    </svg>
+    <div class="logo-text">
+        <span class="name-main">Shaikh Mazheruddin Fahad</span>
+        <span class="name-sub">Data & Analytics Specialist</span>
+    </div>
+    </a>
+
     <nav class="navbar">
-        <ul>
-            <li><a class="active" href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#achievements">Achievements</a></li>
-            <li><a href="#projects">Projects</a></li>
-        </ul>
+        <a href="#about" class="active">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
     </nav>
+
+    <div class="header-action">
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </div>
 </header>
-<section class="home" id="home">
-    <div class="content">
-        <h2>Hi, I'm <br/><span>Shaikh Mazheruddin Fahad</span></h2>
-        <p>Passionate in <span class="typing-text"></span></p>
-        <a href="#about" class="btn"><span>About Me</span>
-            <i class="fas fa-arrow-circle-down"></i>
-        </a>
-    </div>
-    <div class="image">
-        <img draggable="false" class="tilt" src="./assets/images/hero1.png" alt="Hero Image">
-    </div>
-</section>
-<section class="about" id="about">
-    <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
-    <div class="row">
-        <div class="image">
-            <img draggable="false" class="tilt" src="./assets/images/profile2.png" alt="Profile Image">
+
+<section class="hero" id="home">
+    <div class="hero-container">
+        <div class="hero-content">
+            <div class="status-pill">
+                <span class="pulse-dot"></span>
+                <span>Data Analyst • Turning Complex Data into Actionable Insights</span>
+            </div>
+
+            <h1 class="hero-title">
+                Transforming Raw Data into <span class="gradient-text">Actionable Business Insights</span>
+            </h1>
+
+            <p class="hero-subtitle">
+                Data Analyst with <strong>1.8+ years of professional experience at Helson Software Solutions Private Limited</strong>. 
+                B.Tech CSE graduate and AlmaBetter-trained specialist experienced in engineering SQL databases, 
+                building automated Python pipelines, and delivering high-impact Power BI business dashboards.
+            </p>
+
+            <div class="hero-tech-stack">
+                <span class="stack-label">Primary Stack:</span>
+                <span class="stack-badge"><i class="fab fa-python"></i> Python</span>
+                <span class="stack-badge"><i class="fas fa-database"></i> SQL</span>
+                <span class="stack-badge"><i class="fas fa-chart-bar"></i> Power BI</span>
+                <span class="stack-badge"><i class="fas fa-project-diagram"></i> Data Cleaning</span>
+            </div>
+
+            <div class="hero-cta">
+                <a href="#projects" class="btn-primary">
+                    <span>Explore Data Projects</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#experience" class="btn-secondary">
+                    <i class="fas fa-briefcase"></i>
+                    <span>View Experience</span>
+                </a>
+                <a href="https://drive.google.com/file/d/11uJbYRG1RpGB6NV4-g8RU-r-XTwNLAg5/view?usp=drive_link" target="_blank" class="btn-secondary">
+                    <i class="fas fa-file-pdf"></i>
+                    <span>View Resume</span>
+                </a>
+                <a href="#contact" class="btn-secondary">
+                    <i class="fas fa-paper-plane"></i>
+                    <span>Get in Touch</span>
+                </a>
+            </div>
         </div>
-        <div class="content">
-            <h3>I'm <span style="color: #2aa5f7;">Fahad</span></h3>
-            <p>I am a Computer Science & Engineering graduate and an Almabetter-trained Data Analyst specializing
-                 in transforming raw data into actionable business insights. Equipped with a strong foundational 
-                 engineering background, I build data pipelines, write optimized SQL queries, and design interactive 
-                 dashboards using Power BI and Tableau. I thrive on solving complex business problems using data and 
-                 am looking to leverage my technical toolkit to drive impactful, data-driven decisions.</p>
-            
-            <div class="box-container">
-                <div class="box">
-                    <p><span>Email : </span><a href="mailto:sfahad7020@gmail.com"> sfahad7020@gmail.com</a></p>
-                    <p><span>Phone : </span> +91 7620687838</p>
-                    <p><span>Place : </span> Hyderabad, India - 500002</p>
+
+        <div class="hero-visual">
+            <div class="analytics-card">
+                <div class="card-header">
+                    <div class="card-dots">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <span class="card-title"><i class="fas fa-terminal"></i> data_analytics.py</span>
+                </div>
+                
+                <div class="analytics-body">
+                    <div class="metric-row">
+                        <div class="metric-box">
+                            <span class="metric-num">1.8+</span>
+                            <span class="metric-label">Years Exp @ Helson</span>
+                        </div>
+                        <div class="metric-box">
+                            <span class="metric-num">8+</span>
+                            <span class="metric-label">Projects</span>
+                        </div>
+                    </div>
+
+                    <div class="code-preview">
+                        <span class="code-line"><span class="code-kw">company</span> = <span class="code-str">"Helson Software Solutions Private Limited"</span></span>
+                        <span class="code-line"><span class="code-kw">role</span> = <span class="code-str">"Data & Technical Analyst"</span></span>
+                        <span class="code-line">exp_years = <span class="code-num">1.8</span></span>
+                        <span class="code-line">status = <span class="code-str">"Open for New Opportunities"</span></span>
+                    </div>
+
+                    <div class="hud-footer">
+                        <i class="fas fa-check-circle"></i> Status: <span class="status-active">Experienced Professional</span>
+                    </div>
                 </div>
             </div>
             
-            <div class="resumebtn">
-                <a href="https://drive.google.com/file/d/1B5XBnhhlxVFfF-Lq-xzBrSUevyeoWu-2/view?usp=drive_link" target="_blank" class="btn"><span>Resume</span>
-                    <i class="fas fa-chevron-right"></i>
+            <div class="hero-glow-1"></div>
+            <div class="hero-glow-2"></div>
+        </div>
+    </div>
+</section>
+
+<section class="about" id="about">
+    <div class="section-title">
+        <h2 class="heading-line">Biography <span class="line"></span></h2>
+    </div>
+
+    <div class="about-container">
+        <div class="about-image-col">
+            <div class="image-wrapper tilt">
+                <img draggable="false" src="./assets/images/profile2.png" alt="Fahad - Data Analyst">
+                <div class="image-border-glow"></div>
+            </div>
+            
+            <div class="about-highlights">
+                <div class="highlight-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <div>
+                        <h4>B.Tech CSE</h4>
+                        <p>2023 Graduate</p>
+                    </div>
+                </div>
+                <div class="highlight-card">
+                    <i class="fas fa-chart-bar"></i>
+                    <div>
+                        <h4>Data & Analytics</h4>
+                        <p>Specialization</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-content-col">
+            <h3 class="about-intro">I'm <span class="accent-text">Fahad</span>, a Data Analyst</h3>
+            
+            <p class="about-text">
+                Data Analyst with 1.8 years of experience turning raw, messy data into clear, decision-ready insights
+                using Python, SQL, and Power BI. Skilled at building ETL pipelines, automating reporting, and designing interactive 
+                dashboards that have driven measurable business impact, including a 15% lift in repeat users and a 30% reduction in manual
+                reporting time. Comfortable owning a problem end-to-end: pulling data from source systems, cleaning and validating it,
+                and presenting findings that stakeholders can act on.
+            </p>
+
+            <div class="info-grid">
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <span class="label">Email</span>
+                        <a href="mailto:sfahad7020@gmail.com" class="val">sfahad7020@gmail.com</a>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <div>
+                        <span class="label">Phone</span>
+                        <a href="tel:+917620687838" class="val">+91 7620687838</a>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <span class="label">Location</span>
+                        <span class="val">Hyderabad, India - 500002</span>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-briefcase"></i>
+                    <div>
+                        <span class="label">Status</span>
+                        <span class="val accent-text">Open to Work</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-cta">
+                <a href="https://drive.google.com/file/d/1B5XBnhhlxVFfF-Lq-xzBrSUevyeoWu-2/view?usp=drive_link" target="_blank" class="btn-primary">
+                    <span>Resume</span>
+                    <i class="fas fa-file"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <div class="about-education">
+        <h2 class="heading-line">Education <span class="line"></span></h2>
+        
+        <div class="edu-timeline">
+            <div class="edu-item">
+                <div class="edu-img">
+                    <img src="assets/images/Education/MGM.jpg" alt="MGM College Of Engineering Campus">
+                </div>
+                <div class="edu-details">
+                    <div class="edu-header">
+                        <h4>B.Tech in Computer Science & Engineering</h4>
+                        <span class="edu-badge">2019 - 2023</span>
+                    </div>
+                    <p class="institution">MGM College Of Engineering, Nanded | DBATU</p>
+                    <p class="grade">CGPA: <span>7.81</span></p>
+                </div>
+            </div>
+
+            <div class="edu-item">
+                <div class="edu-img">
+                    <img src="assets/images/Education/College.jpg" alt="College Campus">
+                </div>
+                <div class="edu-details">
+                    <div class="edu-header">
+                        <h4>HSC Science</h4>
+                        <span class="edu-badge">2018 - 2019</span>
+                    </div>
+                    <p class="institution">AL-Rizwan Jr. College & Group of Schools | State Board</p>
+                    <p class="grade">Result: <span>First Class</span></p>
+                </div>
+            </div>
+
+            <div class="edu-item">
+                <div class="edu-img">
+                    <img src="assets/images/Education/school.jpg" alt="School Campus">
+                </div>
+                <div class="edu-details">
+                    <div class="edu-header">
+                        <h4>SSC</h4>
+                        <span class="edu-badge">2016 - 2017</span>
+                    </div>
+                    <p class="institution">AL-Rizwan English School | State Board</p>
+                    <p class="grade">Result: <span>First Class</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="skills" id="skills">
+    <h2 class="heading-line">Technical Skills <span class="line"></span></h2>
+
+    <div class="skills-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="languages">Languages & SQL</button>
+        <button class="filter-btn" data-filter="libraries">Python Libraries</button>
+        <button class="filter-btn" data-filter="tools">BI & Tools</button>
+    </div>
+
+    <div class="skills-grid">
+        <div class="skill-card" data-category="languages">
+            <i class="fab fa-python skill-icon"></i>
+            <h3>Python</h3>
+        </div>
+        <div class="skill-card" data-category="languages">
+            <i class="fas fa-database skill-icon"></i>
+            <h3>SQL</h3>
+        </div>
+        <div class="skill-card" data-category="languages">
+            <i class="fas fa-server skill-icon"></i>
+            <h3>MySQL</h3>
+        </div>
+        <div class="skill-card" data-category="languages">
+            <i class="fas fa-database skill-icon"></i>
+            <h3>PostgreSQL</h3>
+        </div>
+
+        <div class="skill-card" data-category="tools">
+            <i class="fas fa-chart-bar skill-icon"></i>
+            <h3>Power BI</h3>
+        </div>
+        <div class="skill-card" data-category="tools">
+            <i class="fas fa-file-excel skill-icon"></i>
+            <h3>Excel</h3>
+        </div>
+        <div class="skill-card" data-category="tools">
+            <i class="fas fa-filter skill-icon"></i>
+            <h3>Power Query</h3>
+        </div>
+        <div class="skill-card" data-category="tools">
+            <i class="fas fa-project-diagram skill-icon"></i>
+            <h3>Web Scraping</h3>
+        </div>
+
+        <div class="skill-card" data-category="libraries">
+            <i class="fas fa-cubes skill-icon"></i>
+            <h3>NumPy</h3>
+        </div>
+        <div class="skill-card" data-category="libraries">
+            <i class="fas fa-table skill-icon"></i>
+            <h3>Pandas</h3>
+        </div>
+        <div class="skill-card" data-category="libraries">
+            <i class="fas fa-chart-line skill-icon"></i>
+            <h3>Matplotlib</h3>
+        </div>
+        <div class="skill-card" data-category="libraries">
+            <i class="fas fa-chart-pie skill-icon"></i>
+            <h3>Seaborn</h3>
+        </div>
+
+        <div class="skill-card" data-category="tools">
+            <i class="fas fa-terminal skill-icon"></i>
+            <h3>Jupyter</h3>
+        </div>
+        <div class="skill-card" data-category="tools">
+            <i class="fab fa-google skill-icon"></i>
+            <h3>Google Colab</h3>
+        </div>
+        <div class="skill-card" data-category="libraries">
+            <i class="fas fa-calculator skill-icon"></i>
+            <h3>Statistical Analysis</h3>
+        </div>
+    </div>
+
+    <div class="prof-skills-container">
+        <h3 class="heading-line">Professional Competencies <span class="line"></span></h3>
+        
+        <div class="prof-skills-grid">
+            <div class="prof-card">
+                <i class="fas fa-comments"></i>
+                <h4>Data Storytelling</h4>
+                <p>Translating complex SQL query outputs into actionable business narratives.</p>
+            </div>
+
+            <div class="prof-card">
+                <i class="fas fa-lightbulb"></i>
+                <h4>Business Acumen</h4>
+                <p>Identifying key growth drivers and business KPIs across diverse domains.</p>
+            </div>
+
+            <div class="prof-card">
+                <i class="fas fa-tasks"></i>
+                <h4>Requirements Gathering</h4>
+                <p>Collaborating with stakeholders to define dashboard metrics and scope.</p>
+            </div>
+
+            <div class="prof-card">
+                <i class="fas fa-search"></i>
+                <h4>Problem-Solving</h4>
+                <p>Performing root-cause analysis on complex data anomalies.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="experience" id="experience">
+    <h2 class="heading-line">Experience<span class="line"></span></h2>
+
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="timeline-icon"><i class="fas fa-user"></i></div>
+            <div class="timeline-content">
+                <div class="timeline-header">
+                    <h3>Technical Analyst (Data Analytics)</h3>
+                    <span class="timeline-date">Sep 2024 – Present</span>
+                </div>
+                <h4 class="company">Helson Software Solutions Private Limited</h4>
+                <ul class="exp-bullets">
+                    <li>Built an end-to-end ETL pipeline to extract raw data from Azure and transform it into clean, analysis-ready datasets for sentiment and audience engagement analysis.</li>
+                    <li>Used SQL to analyze platform data and uncover audience behavior patterns, driving a 15% increase in repeat users through improved understanding of user needs.</li>
+                    <li>Designed and maintained interactive Power BI dashboards sourced from MySQL via SQL queries, giving stakeholders real-time visibility into KPIs.</li>
+                    <li>Applied Power Query for data cleansing and transformation and DAX for calculated metrics, tailoring reporting to evolving business requirements.</li>
+                    <li>Triaged and resolved production issues reported by the business, including data/reporting bugs, ensuring reliable day-to-day operations.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-icon"><i class="fas fa-user"></i></div>
+            <div class="timeline-content">
+                <div class="timeline-header">
+                    <h3>Data Analyst Trainee</h3>
+                    <span class="timeline-date">Aug 2023 – Jul 2024</span>
+                </div>
+                <h4 class="company">AlmaBetter Data Science Training Program (Remote)</h4>
+                <ul class="exp-bullets">
+                    <li>Processed and analyzed datasets of 100,000+ records using Python (Pandas, Matplotlib, Seaborn), improving the efficiency of downstream model decision-making.</li>
+                    <li>Designed and launched dynamic, automated dashboards in Power BI and Tableau, cutting manual corporate reporting time by 30%.</li>
+                    <li>Built end-to-end data validation pipelines in Pandas and SQL, achieving 99% data accuracy across cross-functional data reports.</li>
+                    <li>Applied program training to a capstone project analyzing 119,000+ hotel booking records, delivering a multi-page interactive dashboard for revenue and operations tracking.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="projects" id="projects">
+    <h2 class="heading-line">Projects <span class="line"></span></h2>
+
+    <div class="project-filter">
+        <button class="p-filter-btn active" data-filter="all">All Projects</button>
+        <button class="p-filter-btn" data-filter="python">Python & Web Scrapping</button>
+        <button class="p-filter-btn" data-filter="sql">SQL</button>
+        <button class="p-filter-btn" data-filter="dashboards">Dashboards</button>
+    </div>
+
+    <div class="projects-grid">
+        <div class="project-card" data-category="python">
+            <div class="project-img">
+                <img src="assets/images/projects/e-commerce.jpg" alt="Brazilian E-Commerce">
+                <div class="project-overlay">
+                    <a href="https://github.com/Shaikh-Mazher01/Olist-E-commerce" target="_blank" class="icon-btn" title="View Code">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="project-details">
+                <div class="project-tags">
+                    <span class="p-tag">Inferential Satistics</span>
+                    <span class="p-tag">Hypothesis Testing</span>
+                    <span class="p-tag">Exploratory Data analysis</span>
+                </div>
+                <h3>Olist E-Commerce</h3>
+                <p>Conducted a comprehensive relational database exploratory analysis on thousands of transaction logs, applying inferential statistics (T-Tests, Chi-Square) to map out freight price metrics and logistics bottlenecks across Brazil.</p>
+                <div class="proj-action">
+                    <a href="https://github.com/Shaikh-Mazher01/Olist-E-commerce" target="_blank" class="proj-btn">
+                        <span>View Repository</span>
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card" data-category="python">
+            <div class="project-img">
+                <img src="assets/images/projects/Redfin.png" alt="Redfin Webscrapping">
+                <div class="project-overlay">
+                    <a href="https://github.com/Shaikh-Mazher01/Redfin-Housing-Analytics" target="_blank" class="icon-btn" title="View Code">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="project-details">
+                <div class="project-tags">
+                    <span class="p-tag">Python</span>
+                    <span class="p-tag">Web Scrapping</span>
+                    <span class="p-tag">Regex</span>
+                    <span class="p-tag">Visualization</span>
+                </div>
+                <h3>Redfin Webscrapping</h3>
+                <p>Engineered an automated data pipeline using curl_cffi and BeautifulSoup to securely harvest scattered real estate listings, bypassing anti-bot limits to deliver structured pricing and spatial density insights.</p>
+                <div class="proj-action">
+                    <a href="https://github.com/Shaikh-Mazher01/Redfin-Housing-Analytics" target="_blank" class="proj-btn">
+                        <span>View Repository</span>
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card" data-category="sql">
+            <div class="project-img">
+                <img src="assets/images/projects/Amazon.jpg" alt="Amazon">
+                <div class="project-overlay">
+                    <a href="https://github.com/Shaikh-Mazher01/Product_Dissection" target="_blank" class="icon-btn" title="View Code">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="project-details">
+                <div class="project-tags">
+                    <span class="p-tag">Schema design</span>
+                    <span class="p-tag">Data Architecture</span>
+                    <span class="p-tag">ER Modeling</span>
+                </div>
+                <h3>Amazon Product Dissection and ER Diagram</h3>
+                <p>Dissected Amazon's core transactional features to design a highly normalized, 8-entity relational database schema configured with strict constraint logic to maintain security and immunity against SQL injection.</p>
+                <div class="proj-action">
+                    <a href="https://github.com/Shaikh-Mazher01/Product_Dissection" target="_blank" class="proj-btn">
+                        <span>View Repository</span>
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card" data-category="dashboards">
+            <div class="project-img">
+                <img src="assets/images/projects/Dashboard.png" alt="Insight">
+                <div class="project-overlay">
+                    <a href="https://github.com/Shaikh-Mazher01/Hotel-Booking-Insights-Visualization" target="_blank" class="icon-btn" title="View Code">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="project-details">
+                <div class="project-tags">
+                    <span class="p-tag">Tableau</span>
+                    <span class="p-tag">Dashboard</span>
+                    <span class="p-tag">Storytelling</span>
+                </div>
+                <h3>Hotel Booking Insights Visualization</h3>
+                <p>Built interactive dashboards in Tableau for comprehensive data visualization. Enhanced data storytelling by presenting complex findings clearly.</p>
+                <div class="proj-action">
+                    <a href="https://github.com/Shaikh-Mazher01/Hotel-Booking-Insights-Visualization" target="_blank" class="proj-btn">
+                        <span>View Repository</span>
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card" data-category="python">
+            <div class="project-img">
+                <img src="assets/images/projects/hotel booking.png" alt="Hotel Booking Analysis">
+                <div class="project-overlay">
+                    <a href="https://github.com/Shaikh-Mazher01/Hotel_Booking_Analysis" target="_blank" class="icon-btn" title="View Code">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="project-details">
+                <div class="project-tags">
+                    <span class="p-tag">Pandas</span>
+                    <span class="p-tag">Numpy</span>
+                    <span class="p-tag">Matplotlib</span>
+                </div>
+                <h3>Hotel Booking Analysis</h3>
+                <p>Cleaned and analyzed real-world datasets using Pandas and NumPy to identify hidden correlations and trends, complete with Seaborn visualizations.</p>
+                <div class="proj-action">
+                    <a href="https://github.com/Shaikh-Mazher01/Hotel_Booking_Analysis" target="_blank" class="proj-btn">
+                        <span>View Repository</span>
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card" data-category="python">
+            <div class="project-img">
+                <img src="assets/images/projects/Angellist.png" alt="Angellist">
+                <div class="project-overlay">
+                    <a href="https://github.com/Shaikh-Mazher01/Web_Scrapping" target="_blank" class="icon-btn" title="View Code">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="project-details">
+                <div class="project-tags">
+                    <span class="p-tag">BeautifulSoup</span>
+                    <span class="p-tag">Automated Data Extraction</span>
+                    <span class="p-tag">Text Feature Parsing</span>
+                </div>
+                <h3>Job Portal WebScrapping</h3>
+                <p>Built a dynamic web scraping engine in Python to extract data science job listings across multiple online platforms, analyzing text descriptions to map in-demand skills against industry compensation packages.</p>
+                <div class="proj-action">
+                    <a href="https://github.com/Shaikh-Mazher01/Web_Scrapping" target="_blank" class="proj-btn">
+                        <span>View Repository</span>
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card" data-category="dashboards">
+            <div class="project-img">
+                <img src="assets/images/projects/Tableau.png" alt="Tableau">
+                <div class="project-overlay">
+                    <a href="https://github.com/Shaikh-Mazher01/Tableau" target="_blank" class="icon-btn" title="View Code">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="project-details">
+                <div class="project-tags">
+                    <span class="p-tag">Business Inteligence</span>
+                    <span class="p-tag">Tableau Dashboard </span>
+                    <span class="p-tag">Storytelling</span>
+                </div>
+                <h3>Tableau</h3>
+                <p>Developed an interactive, multi-dimensional executive dashboard in Tableau analyzing 30 business scenarios to track global supply chain metrics, regional profit impacts, and consumer purchasing habits.</p>
+                <div class="proj-action">
+                    <a href="https://github.com/Shaikh-Mazher01/Tableau" target="_blank" class="proj-btn">
+                        <span>View Repository</span>
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card" data-category="dashboards">
+            <div class="project-img">
+                <img src="assets/images/projects/Titanic.png" alt="Titanic">
+                <div class="project-overlay">
+                    <a href="https://github.com/Shaikh-Mazher01/Statistical-Exploration-of-Titanic-Survival" target="_blank" class="icon-btn" title="View Code">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="project-details">
+                <div class="project-tags">
+                    <span class="p-tag">PowerBI</span>
+                    <span class="p-tag">Exploratory Data analysis</span>
+                    <span class="p-tag">Hypothesis Testing</span>
+                    <span class="p-tag">DAX</span>
+                </div>
+                <h3>Titanic Survival Analysis</h3>
+                <p>Conducted Exploratory Data analysis, Feature Engineering and validate analytical finding using chi-square test and T-test hypothesis. And created dashboard for same in PowerBI</p>
+                <div class="proj-action">
+                    <a href="https://github.com/Shaikh-Mazher01/Statistical-Exploration-of-Titanic-Survival" target="_blank" class="proj-btn">
+                        <span>View Repository</span>
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="certifications" id="certifications">
+    <h2 class="heading-line">My Certifications <span class="line"></span></h2>
+
+    <div class="cert-grid">
+        <div class="cert-card">
+            <div class="cert-badge">
+                <i class="fas fa-award"></i>
+            </div>
+            <div class="cert-content">
+                <span class="cert-issuer">AlmaBetter</span>
+                <h3>Full Stack in Data Science</h3>
+                <div class="cert-skills">
+                    <span>Python</span>
+                    <span>Data Analyst</span>
+                    <span>Statistics</span>
+                    <span>Machine Learning</span>
+                </div>
+            </div>
+            <div class="cert-action">
+                <a href="https://verified.sertifier.com/en/verify/15762847007194/" target="_blank" class="cert-btn">
+                    <span>Verify Credential</span>
+                    <i class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="cert-card">
+            <div class="cert-badge">
+                <i class="fas fa-award"></i>
+            </div>
+            <div class="cert-content">
+                <span class="cert-issuer">HackerRank</span>
+                <h3>Software Engineer Intern</h3>
+                <div class="cert-skills">
+                    <span>Python</span>
+                    <span>Coding</span>
+                    <span>Problem Solving</span>
+                </div>
+            </div>
+            <div class="cert-action">
+                <a href="https://www.hackerrank.com/certificates/0ba8e652a2fc" target="_blank" class="cert-btn">
+                    <span>Verify Credential</span>
+                    <i class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="cert-card">
+            <div class="cert-badge">
+                <i class="fas fa-award"></i>
+            </div>
+            <div class="cert-content">
+                <span class="cert-issuer">NPTEL</span>
+                <h3>The Joy of computing Python</h3>
+                <div class="cert-skills">
+                    <span>Python</span>
+                    <span>Programming</span>
+                    <span>Analytical Thinking</span>
+                </div>
+            </div>
+            <div class="cert-action">
+                <a href="https://drive.google.com/file/d/1HDGXniSCz-uugC5-Wjqef52Eebk7qCM-/view" target="_blank" class="cert-btn">
+                    <span>Verify Credential</span>
+                    <i class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="cert-card">
+            <div class="cert-badge">
+                <i class="fas fa-award"></i>
+            </div>
+            <div class="cert-content">
+                <span class="cert-issuer">AlmaBetter</span>
+                <h3>Relational Databases</h3>
+                <div class="cert-skills">
+                    <span>SQL</span>
+                    <span>PostgreSQL</span>
+                    <span>Query</span>
+                </div>
+            </div>
+            <div class="cert-action">
+                <a href="https://verified.sertifier.com/en/verify/86998462967852/" target="_blank" class="cert-btn">
+                    <span>Verify Credential</span>
+                    <i class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="cert-card">
+            <div class="cert-badge">
+                <i class="fas fa-award"></i>
+            </div>
+            <div class="cert-content">
+                <span class="cert-issuer">AlmaBetter</span>
+                <h3>Data Visualization Tools</h3>
+                <div class="cert-skills">
+                    <span>Power BI</span>
+                    <span>Excel</span>
+                    <span>Tableau</span>
+                </div>
+            </div>
+            <div class="cert-action">
+                <a href="https://verified.sertifier.com/en/verify/67352535062095/" target="_blank" class="cert-btn">
+                    <span>Verify Credential</span>
+                    <i class="fas fa-external-link-alt"></i>
                 </a>
             </div>
         </div>
     </div>
 </section>
-<section class="skills" id="skills">
-    <h1 class="main-heading"><i class="fas fa-file-alt"></i> My <span>Skills</span></h1>
 
-    <div class="skills-section">
-        <h2 class="sub-heading">Technical Skills</h2>
-        <div class="skills-box">
-            <div class="skills-container">
-                <div class="skill-card"><img src="assets/images/skills/python.jpeg" alt="Python"><span>Python</span></div>
-                <div class="skill-card"><img src="assets/images/skills/Sql.jpg" alt="MySQL"><span>SQL</span></div>
-                <div class="skill-card"><img src="assets/images/skills/data_analysis.png" alt="Data Analysis"><span>Data Analysis</span></div>
-                <div class="skill-card"><img src="assets/images/skills/powerbi.jpeg" alt="Power BI"><span>Power BI</span></div>
-                <div class="skill-card"><img src="assets/images/skills/Tableau.png" alt="Tableau"><span>Tableau</span></div>
-                <div class="skill-card"><img src="assets/images/skills/postgres.png" alt="PostgresSQL"><span>Postgres</span></div>
-                <div class="skill-card"><img src="assets/images/skills/statical_analysis.jpg" alt="Satatical Analysis"><span>Statistical Analysis</span></div>
-                <div class="skill-card"><img src="assets/images/skills/web_scrapping.png" alt="Web Scraping"><span>Web Scraping</span></div>
-                <div class="skill-card"><img src="assets/images/skills/excel.png" alt="Excel"><span>Excel</span></div>
-            </div>
-        </div>
-    </div>
+<section class="contact" id="contact">
+    <h2 class="heading-line">Get in Touch <span class="line"></span></h2>
 
-    <div class="skills-section">
-        <h2 class="sub-heading">Professional Skills</h2>
-        <div class="skills-box">
-            <div class="skills-container">
-                <div class="skill-card1"><span>Problem Solving</span></div>
-                <div class="skill-card1"><span>Flexibility</span></div>
-                <div class="skill-card1"><span>Creativity</span></div>
-                <div class="skill-card1"><span>Teamwork</span></div>
-                <div class="skill-card1"><span>Confidence</span></div>
-                <div class="skill-card1"><span>Leadership</span></div>
-                <div class="skill-card1"><span>Communication</span></div>
-                <div class="skill-card1"><span>Time Management</span></div>
-            </div>
+    <div class="contact-container">
+        <div class="contact-form-col">
+            <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="9b6e558a-b5c5-4e3a-a94b-45d50c106b65">
+                <input type="hidden" name="subject" value="Contact Form Submission">
+
+                <div class="form-group-row">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-user"></i>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <div class="input-wrapper textarea-wrapper">
+                        <i class="fas fa-comment-alt"></i>
+                        <textarea id="message" name="message" rows="5" placeholder="Hi Fahad, I came across your portfolio and..." required></textarea>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-primary form-btn">
+                    <span>Send Message</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
         </div>
     </div>
 </section>
-<section class="education" id="education">
-    <h1 class="heading"><i class="fas fa-user-graduate"></i> My <span>Education</span></h1>
-    <div class="box-container">
-        <div class="box">
-            <div class="image"><img draggable="false" src="assets/images/Education/MGM.jpg" alt="College"></div>
-            <div class="content">
-                <h3>BTech in Computer Science and Engineering</h3>
-                <p>MGM College Of Engineering Nanded | DBATU</p>
-                <p>7.81 CGPA</p>
-                <h4>2019-2023 | Completed</h4>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-col brand-col">
+            <h3 class="footer-logo">Fahad</h3>
+            <p class="footer-desc">
+                Data Analyst & Technical Analyst passionate about building end-to-end data pipelines, SQL querying, and interactive business intelligence dashboards.
+            </p>
+            <div class="footer-status">
+                <span class="status-dot"></span>
+                <span>Open for Data Analytics roles</span>
             </div>
-        </div>
-        <div class="box">
-            <div class="image"><img draggable="false" src="assets/images/Education/College.jpg" alt="School"></div>
-            <div class="content">
-                <h3>HSC Science</h3>
-                <p>AL-Rizwan Jr. College and Group of Schools | State board</p>
-                <p>First Class</p>
-                <h4>2018-2019 | Completed</h4>
-            </div>
-        </div>
-        <div class="box">
-            <div class="image"><img draggable="false" src="assets/images/Education/school.jpg" alt="School"></div>
-            <div class="content">
-                <h3>SSC</h3>
-                <p>AL-Rizwan English School | State board</p>
-                <p>First Class</p>
-                <h4>2016-2017 | Completed</h4>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="achievements" id="achievements">
-    <h1 class="heading"><i class="fas fa-certificate"></i> My <span>Achievements</span></h1>
-    <div class="certification-grid">
-        <div class="certification-card">
-            <div class="image-container">
-                <img src="assets/images/certificate/Hackerrank.png" alt="Software Engineer intern">
-                <div class="overlay"><a href="https://www.hackerrank.com/certificates/0ba8e652a2fc" target="_blank">View</a></div>
-            </div>
-            <h2>Software Engineer Intern</h2>
-        </div>
-        <div class="certification-card">
-            <div class="image-container">
-                <img src="assets/images/certificate/Almabetter.png" alt="Intro to Programming">
-                <div class="overlay"><a href="https://certificates.almabetter.com/en/verify/08227611949392" target="_blank">View</a></div>
-            </div>
-            <h2>Introduction to Computer Programming</h2>
-        </div>
-        <div class="certification-card">
-            <div class="image-container">
-                <img src="assets/images/certificate/Almabetter.png" alt="Numerical Programming">
-                <div class="overlay"><a href="https://certificates.almabetter.com/en/verify/32765254200130" target="_blank">View</a></div>
-            </div>
-            <h2>Numerical Programming in Python</h2>
-        </div>
-        <div class="certification-card">
-            <div class="image-container">
-                <img src="assets/images/certificate/Almabetter.png" alt="Relational Databases">
-                <div class="overlay"><a href="https://certificates.almabetter.com/en/verify/86998462967852" target="_blank">View</a></div>
-            </div>
-            <h2>Relational Databases</h2>
         </div>
 
-       
-        
-        <div class="more-certificates">
-            <a href="certificates.html">More Certificates</a>
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+                <li><a href="#about"><i class="fas fa-chevron-right"></i> About Me</a></li>
+                <li><a href="#skills"><i class="fas fa-chevron-right"></i> Skills Set</a></li>
+                <li><a href="#experience"><i class="fas fa-chevron-right"></i> Experience</a></li>
+                <li><a href="#projects"><i class="fas fa-chevron-right"></i> Projects</a></li>
+            </ul>
         </div>
-    </div>
-</section>
-<section class="projects" id="projects">
-    <h1 class="heading"><i class="fas fa-briefcase"></i> My <span>Projects</span></h1>
-    <table class="project-table">
-    <thead>
-      <tr>
-        <th>PROJECT NAME</th>
-        <th>LINKS</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Olist E-Commerce Exploratory Data Analysis</td>
-        <td><a href="https://github.com/Shaikh-Mazher01/Olist-E-commerce" target="_blank" aria-label="View project">🔗</a></td>
-      </tr>
-      <tr>
-        <td>Redfin Real Estate Web Scraper &amp; Analytics</td>
-        <td><a href="https://github.com/Shaikh-Mazher01/Redfin-Housing-Analytics" target="_blank" aria-label="View project">🔗</a></td>
-      </tr>
-      <tr>
-        <td>Amazon Product Dissection &amp; ER Diagram</td>
-        <td><a href="https://github.com/Shaikh-Mazher01/Product_Dissection" target="_blank" aria-label="View project">🔗</a></td>
-      </tr>
-      <tr>
-        <td>Hotel Booking Insights Visualization</td>
-        <td><a href="https://github.com/Shaikh-Mazher01/Hotel-Booking-Insights-Visualization" target="_blank" aria-label="View project">🔗</a></td>
-      </tr>
-      <tr>
-        <td>Hotel Booking Analysis</td>
-        <td><a href="https://github.com/Shaikh-Mazher01/Hotel_Booking_Analysis" target="_blank" aria-label="View project">🔗</a></td>
-      </tr>
-      <tr>
-        <td>Job Portal Web Scraping</td>
-        <td><a href="https://github.com/Shaikh-Mazher01/Web_Scrapping" target="_blank" aria-label="View project">🔗</a></td>
-      </tr>
-    </tbody>
-  </table>
-    <div class="container">
-        <div class="image-wrapper">
-            <img src="assets/images/projects/banner.png" alt="Project Banner">
-            <div class="text-container">
-                <p class="project-text">Here you can find a selection of my most recent work, showcasing my skills and experience in various aspects of software development, data analysis, and machine learning.</p>
-                <a href="projects.html" class="btn"><span>My Work</span> <i class="fas fa-chevron-right"></i></a>
+
+        <div class="footer-col">
+            <h4>Contact Info</h4>
+            <ul class="footer-contact">
+                <li>
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:sfahad7020@gmail.com">sfahad7020@gmail.com</a>
+                </li>
+                <li>
+                    <i class="fas fa-phone-alt"></i>
+                    <a href="tel:+917620687838">+91 7620687838</a>
+                </li>
+                <li>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Hyderabad, India - 500001</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Connect</h4>
+            <p class="connect-text">Feel free to reach out for collaborations or opportunities!</p>
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/in/shaikh-mazheruddin-fahad-33183a244/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/Shaikh-Mazher01" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="mailto:sfahad7020@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
             </div>
         </div>
     </div>
-</section>
-<section class="footer">
-    <div class="box-container">
-        <div class="box">
-            <h3>Fahad's Portfolio</h3>
-            <p>Thank you for taking the time to explore my personal portfolio. I would be delighted to connect with you to apply my technical tools to impact business growth.</p>
-        </div>
-        <div class="box">
-            <h3>Contact Info</h3>
-            <p><i class="fas fa-phone"></i><a href="tel:+917620687838">+91 762-068-7838</a></p>
-            <p><i class="fas fa-envelope"></i><a href="mailto:sfahad7020@gmail.com">sfahad7020@gmail.com</a></p>
-            <p><i class="fas fa-map-marked-alt"></i>Hyderabad, India-500002</p>
-            <div class="share">
-                <a href="https://www.linkedin.com/in/shaikh-mazheruddin-fahad-33183a244/" class="fab fa-linkedin" target="_blank" aria-label="LinkedIn"></a>
-                <a href="https://github.com/shaikh-mazher01" class="fab fa-github" target="_blank" aria-label="GitHub"></a>
-            </div>
-        </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 Shaikh Mazheruddin Fahad. Designed & Built with <i class="fas fa-heart"></i></p>
+
     </div>
-    <h1 class="credit">Designed with <i class="fas fa-heart" style="color:red;"></i> by <a href="https://www.linkedin.com/in/shaikh-mazheruddin-fahad-33183a244" target="_blank">Shaikh Mazheruddin Fahad</a></h1>
-</section>
+</footer>
+
 <a href="#home" class="fas fa-angle-up" id="scroll-top"></a>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
