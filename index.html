@@ -812,7 +812,14 @@
                         <label for="email">Your Email</label>
                         <div class="input-wrapper">
                             <i class="fas fa-envelope"></i>
-                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                            <input  
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            placeholder="john@example.com" 
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                            title="Please enter a valid email address (e.g., sfahad7020@gmail.com)"
+                            required>
                         </div>
                     </div>
                 </div>
