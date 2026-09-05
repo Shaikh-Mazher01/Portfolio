@@ -1,11 +1,11 @@
-# Personal Portfolio Website 🚀
+# Personal Portfolio Website 
 Welcome! I’m Shaikh Mazheruddin Fahad, a Data Analyst specializing in SQL, Python pipelines, and Power BI dashboards. This repository contains the source code for my personal portfolio, showcasing my technical projects, work experience, certifications, and academic background.
 
 Live Portfolio: https://shaikh-mazher01.github.io/Portfolio
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 This repository contains the complete frontend codebase for my personal interactive portfolio. The website is built using modern web standards (HTML5, CSS3, JavaScript) and integrated with lightweight third-party services to ensure fast load times, smooth navigation, and automated contact management.
 
